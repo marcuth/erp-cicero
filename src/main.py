@@ -27,7 +27,8 @@ def handle_submit_login_credentials(username: str, password: str) -> None:
     
 def handle_valid_login() -> None:
     clear_window(root)
-    root.state("zoomed")
+    # root.state("zoomed")
+    root.geometry("1366x768")
 
     notebook = Notebook(root)
     
