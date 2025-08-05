@@ -1,0 +1,128 @@
+[
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "ttkbootstrap",
+        "description": "ttkbootstrap",
+        "isExtraImport": true,
+        "detail": "ttkbootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "Notebook",
+        "importPath": "ttkbootstrap",
+        "description": "ttkbootstrap",
+        "isExtraImport": true,
+        "detail": "ttkbootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "ProductsFrame",
+        "importPath": "frames.products",
+        "description": "frames.products",
+        "isExtraImport": true,
+        "detail": "frames.products",
+        "documentation": {}
+    },
+    {
+        "label": "CouponFrame",
+        "importPath": "frames.coupon",
+        "description": "frames.coupon",
+        "isExtraImport": true,
+        "detail": "frames.coupon",
+        "documentation": {}
+    },
+    {
+        "label": "clear_window",
+        "importPath": "utils.window",
+        "description": "utils.window",
+        "isExtraImport": true,
+        "detail": "utils.window",
+        "documentation": {}
+    },
+    {
+        "label": "LoginFrame",
+        "importPath": "frames.login",
+        "description": "frames.login",
+        "isExtraImport": true,
+        "detail": "frames.login",
+        "documentation": {}
+    },
+    {
+        "label": "center_window",
+        "kind": 2,
+        "importPath": "src.utils.window",
+        "description": "src.utils.window",
+        "peekOfCode": "def center_window(root: Tk) -> None:\n    root.update_idletasks()\n    screen_width = root.winfo_screenwidth()\n    screen_height = root.winfo_screenheight()\n    window_width = root.winfo_width()\n    window_height = root.winfo_height()\n    x = (screen_width - window_width) // 2\n    y = (screen_height - window_height) // 2\n    root.geometry(f\"{window_width}x{window_height}+{x}+{y}\")\ndef clear_window(window: Tk):",
+        "detail": "src.utils.window",
+        "documentation": {}
+    },
+    {
+        "label": "clear_window",
+        "kind": 2,
+        "importPath": "src.utils.window",
+        "description": "src.utils.window",
+        "peekOfCode": "def clear_window(window: Tk):\n    for widget in window.winfo_children():\n        widget.destroy()",
+        "detail": "src.utils.window",
+        "documentation": {}
+    },
+    {
+        "label": "handle_submit_login_credentials",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def handle_submit_login_credentials(username: str, password: str) -> None:\n    clean_username = username.strip()\n    clean_password = password.strip()\n    if not clean_username:\n        messagebox.showerror(\"ERP - Erro ve validação\", \"Você deve preencher o campo de 'Usuário'!\")\n        return\n    if not clean_password:\n        messagebox.showerror(\"ERP - Erro ve validação\", \"Você deve preencher o campo de 'Senha'!\")\n        return\n    handle_valid_login()",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "handle_valid_login",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def handle_valid_login() -> None:\n    clear_window(root)\n    # root.state(\"zoomed\")\n    root.geometry(\"1366x768\")\n    notebook = Notebook(root)\n    tabs_cls = [\n        (CouponFrame, \"Cupom\"),\n        (ProductsFrame, \"Produtos\"),\n        (CouponFrame, \"Clientes\"),\n        (CouponFrame, \"Relatórios\"),",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def main() -> None:\n    login_frame = LoginFrame(root, on_submit=handle_submit_login_credentials)\n    login_frame.pack() \n    root.mainloop()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "style",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "style = Style(\"cosmo\")\nroot: Tk = style.master\nroot.title(\"ERP\")\ndef handle_submit_login_credentials(username: str, password: str) -> None:\n    clean_username = username.strip()\n    clean_password = password.strip()\n    if not clean_username:\n        messagebox.showerror(\"ERP - Erro ve validação\", \"Você deve preencher o campo de 'Usuário'!\")\n        return\n    if not clean_password:",
+        "detail": "src.main",
+        "documentation": {}
+    }
+]
