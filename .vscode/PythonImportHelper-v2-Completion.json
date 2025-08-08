@@ -103,7 +103,7 @@
         "kind": 2,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "def handle_valid_login() -> None:\n    clear_window(root)\n    # root.state(\"zoomed\")\n    root.geometry(\"1366x768\")\n    notebook = Notebook(root)\n    tabs_cls = [\n        (CouponFrame, \"Cupom\"),\n        (ProductsFrame, \"Produtos\"),\n        (CouponFrame, \"Clientes\"),\n        (CouponFrame, \"Relatórios\"),",
+        "peekOfCode": "def handle_valid_login() -> None:\n    clear_window(root)\n    # Tela cheia\n    # root.state(\"zoomed\")\n    root.geometry(\"1366x768\")\n    notebook = Notebook(root)\n    tabs_cls = [\n        (CouponFrame, \"Cupom\"),\n        (ProductsFrame, \"Produtos\"),\n        (CouponFrame, \"Clientes\"),",
         "detail": "src.main",
         "documentation": {}
     },
