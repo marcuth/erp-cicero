@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 ttkbootstrap = "^1.14.2"
+sqlalchemy = "^2.0.42"
 
 
 [build-system]
