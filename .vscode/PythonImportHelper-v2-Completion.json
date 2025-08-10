@@ -1,5 +1,302 @@
 [
     {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "utils.security",
+        "description": "utils.security",
+        "isExtraImport": true,
+        "detail": "utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "SALT",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_URL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
         "label": "Tk",
         "importPath": "tkinter",
         "description": "tkinter",
@@ -72,6 +369,132 @@
         "documentation": {}
     },
     {
+        "label": "ProductBarCode",
+        "kind": 6,
+        "importPath": "src.models.bar_code",
+        "description": "src.models.bar_code",
+        "peekOfCode": "class ProductBarCode(Base):\n    __tablename__ = \"product_barcodes\"\n    id = Column(Integer, primary_key=True)\n    code = Column(String(50), nullable=False)\n    product_id = Column(Integer, ForeignKey(\"products.id\"))\n    product = relationship(\"Product\", back_populates=\"bar_codes\")",
+        "detail": "src.models.bar_code",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "src.models.base",
+        "description": "src.models.base",
+        "peekOfCode": "Base = declarative_base()",
+        "detail": "src.models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "kind": 6,
+        "importPath": "src.models.customer",
+        "description": "src.models.customer",
+        "peekOfCode": "class Customer(Base):\n    __tablename__ = \"customers\"\n    id = Column(Integer, primary_key=True)\n    name = Column(String(250), nullable=False)\n    cpf = Column(String(30), nullable=False)\n    state = Column(String(80), nullable=False)\n    city = Column(String(120), nullable=False)\n    address = Column(String(250), nullable=False)\n    phone = Column(String(80), nullable=False)\n    email = Column(String(150), nullable=False)",
+        "detail": "src.models.customer",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "src.models.models",
+        "description": "src.models.models",
+        "peekOfCode": "class Order(Base):\n    __tablename__ = \"orders\"\n    id = Column(Integer, primary_key=True)\n    seller_id = Column(Integer, nullable=False)\n    customer_id = Column(Integer, nullable=False)\n    total_price = Column(Float, default=0.0)\n    payment_type = Column(String(30))\n    created_at = Column(DateTime, default=datetime.utcnow)\nclass OrderItem(Base):\n    __tablename__ = \"order_items\"",
+        "detail": "src.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "kind": 6,
+        "importPath": "src.models.models",
+        "description": "src.models.models",
+        "peekOfCode": "class OrderItem(Base):\n    __tablename__ = \"order_items\"\n    id = Column(Integer, primary_key=True)\n    order_id = Column(Integer, ForeignKey(\"orders.id\"), nullable=False)\n    product_id = Column(Integer, nullable=False)\n    quantity = Column(Integer, default=1)\n    price = Column(Float, default=0.0)\nclass Installment(Base):\n    __tablename__ = \"installments\"\n    id = Column(Integer, primary_key=True)",
+        "detail": "src.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Installment",
+        "kind": 6,
+        "importPath": "src.models.models",
+        "description": "src.models.models",
+        "peekOfCode": "class Installment(Base):\n    __tablename__ = \"installments\"\n    id = Column(Integer, primary_key=True)\n    order_id = Column(Integer, nullable=False)\n    seller_id = Column(Integer, nullable=False)\n    customer_id = Column(Integer, nullable=False)\n    must_be_paid_at = Column(Date, nullable=False)\n    paid_at = Column(DateTime, nullable=True)\n    received_by_seller_id = Column(Integer, nullable=True)\n    amount = Column(Float, default=0.0)",
+        "detail": "src.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "DB_FILE",
+        "kind": 5,
+        "importPath": "src.models.models",
+        "description": "src.models.models",
+        "peekOfCode": "DB_FILE = \"erp_data.db\"\nDB_URL = f\"sqlite:///{DB_FILE}\"\nfrom .base import Base\nengine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nclass Order(Base):\n    __tablename__ = \"orders\"\n    id = Column(Integer, primary_key=True)\n    seller_id = Column(Integer, nullable=False)\n    customer_id = Column(Integer, nullable=False)",
+        "detail": "src.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "DB_URL",
+        "kind": 5,
+        "importPath": "src.models.models",
+        "description": "src.models.models",
+        "peekOfCode": "DB_URL = f\"sqlite:///{DB_FILE}\"\nfrom .base import Base\nengine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nclass Order(Base):\n    __tablename__ = \"orders\"\n    id = Column(Integer, primary_key=True)\n    seller_id = Column(Integer, nullable=False)\n    customer_id = Column(Integer, nullable=False)\n    total_price = Column(Float, default=0.0)",
+        "detail": "src.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "src.models.models",
+        "description": "src.models.models",
+        "peekOfCode": "engine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nclass Order(Base):\n    __tablename__ = \"orders\"\n    id = Column(Integer, primary_key=True)\n    seller_id = Column(Integer, nullable=False)\n    customer_id = Column(Integer, nullable=False)\n    total_price = Column(Float, default=0.0)\n    payment_type = Column(String(30))\n    created_at = Column(DateTime, default=datetime.utcnow)",
+        "detail": "src.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "src.models.models",
+        "description": "src.models.models",
+        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nclass Order(Base):\n    __tablename__ = \"orders\"\n    id = Column(Integer, primary_key=True)\n    seller_id = Column(Integer, nullable=False)\n    customer_id = Column(Integer, nullable=False)\n    total_price = Column(Float, default=0.0)\n    payment_type = Column(String(30))\n    created_at = Column(DateTime, default=datetime.utcnow)\nclass OrderItem(Base):",
+        "detail": "src.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "src.models.product",
+        "description": "src.models.product",
+        "peekOfCode": "class Product(Base):\n    __tablename__ = \"products\"\n    id = Column(Integer, primary_key=True)\n    name = Column(String(250), nullable=False)\n    buy_price = Column(Float, default=0.0)\n    sell_price = Column(Float, default=0.0)\n    stock = Column(Integer, default=0)\n    bar_codes = Column(Text)",
+        "detail": "src.models.product",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "src.models.user",
+        "description": "src.models.user",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True)\n    username = Column(String(150), unique=True, nullable=False)\n    name = Column(String(250))\n    role = Column(String(20))\n    password_hash = Column(String(256))",
+        "detail": "src.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "src.services.user",
+        "description": "src.services.user",
+        "peekOfCode": "def create_user(username, name, role, password):\n    session = SessionLocal()\n    try:\n        user = User(\n            username=username,\n            name=name,\n            role=role,\n            password=hash_password(password)\n        )\n        session.add(user)",
+        "detail": "src.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "src.utils.security",
+        "description": "src.utils.security",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return hashlib.sha256((SALT + (password or \"\")).encode(\"utf-8\")).hexdigest()",
+        "detail": "src.utils.security",
+        "documentation": {}
+    },
+    {
         "label": "center_window",
         "kind": 2,
         "importPath": "src.utils.window",
@@ -90,6 +513,60 @@
         "documentation": {}
     },
     {
+        "label": "DB_URL",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "DB_URL = \"sqlite:///erp_data.db\"\nSALT = \"somesalt_fixed\"",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "SALT",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "SALT = \"somesalt_fixed\"",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "kind": 2,
+        "importPath": "src.db",
+        "description": "src.db",
+        "peekOfCode": "def init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "detail": "src.db",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "src.db",
+        "description": "src.db",
+        "peekOfCode": "engine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nBase = declarative_base()\ndef init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "detail": "src.db",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "src.db",
+        "description": "src.db",
+        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nBase = declarative_base()\ndef init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "detail": "src.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "src.db",
+        "description": "src.db",
+        "peekOfCode": "Base = declarative_base()\ndef init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "detail": "src.db",
+        "documentation": {}
+    },
+    {
         "label": "handle_submit_login_credentials",
         "kind": 2,
         "importPath": "src.main",
@@ -103,7 +580,7 @@
         "kind": 2,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "def handle_valid_login() -> None:\n    clear_window(root)\n    # Tela cheia\n    # root.state(\"zoomed\")\n    root.geometry(\"1366x768\")\n    notebook = Notebook(root)\n    tabs_cls = [\n        (CouponFrame, \"Cupom\"),\n        (ProductsFrame, \"Produtos\"),\n        (CouponFrame, \"Clientes\"),",
+        "peekOfCode": "def handle_valid_login() -> None:\n    clear_window(root)\n    root.state(\"zoomed\")\n    notebook = Notebook(root)\n    tabs_cls = [\n        (CouponFrame, \"Cupom\"),\n        (ProductsFrame, \"Produtos\"),\n        (CouponFrame, \"Clientes\"),\n        (CouponFrame, \"Relatórios\"),\n        (CouponFrame, \"Usuários\")",
         "detail": "src.main",
         "documentation": {}
     },
@@ -112,7 +589,7 @@
         "kind": 2,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "def main() -> None:\n    login_frame = LoginFrame(root, on_submit=handle_submit_login_credentials)\n    login_frame.pack() \n    root.mainloop()\nif __name__ == \"__main__\":\n    main()",
+        "peekOfCode": "def main() -> None:\n    login_frame = LoginFrame(root, on_submit=handle_submit_login_credentials)\n    login_frame.pack()\n    root.mainloop()\nif __name__ == \"__main__\":\n    main()",
         "detail": "src.main",
         "documentation": {}
     },
