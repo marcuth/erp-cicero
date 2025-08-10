@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 
 from .base import Base
 
-class ProductBarCode(Base):
+class BarCode(Base):
     __tablename__ = "product_barcodes"
     id = Column(Integer, primary_key=True)
     code = Column(String(50), nullable=False)
