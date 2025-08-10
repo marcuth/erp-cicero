@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Enum
 
+from enums.gender import Gender
 from .base import Base
 
 class Customer(Base):
@@ -13,4 +14,4 @@ class Customer(Base):
     address = Column(String(250), nullable=False)
     phone = Column(String(80), nullable=False)
     email = Column(String(150), nullable=False)
-    gender = Column(Boolean, nullable=False)
+    gender = Column(Enum(Gender), nullable=False)
