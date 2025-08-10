@@ -129,7 +129,7 @@
         "documentation": {}
     },
     {
-        "label": "String",
+        "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -398,6 +398,14 @@
         "description": "enums.gender",
         "isExtraImport": true,
         "detail": "enums.gender",
+        "documentation": {}
+    },
+    {
+        "label": "InstallmentStatus",
+        "importPath": "enums.installment_status",
+        "description": "enums.installment_status",
+        "isExtraImport": true,
+        "detail": "enums.installment_status",
         "documentation": {}
     },
     {
@@ -700,7 +708,7 @@
         "kind": 6,
         "importPath": "src.models.user",
         "description": "src.models.user",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True)\n    username = Column(String(150), unique=True, nullable=False)\n    name = Column(String(250))\n    role = Column(String(20))\n    password_hash = Column(String(256))",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True)\n    username = Column(String(150), unique=True, nullable=False)\n    name = Column(String(250))\n    role = Column(String(20))\n    password = Column(String(256))",
         "detail": "src.models.user",
         "documentation": {}
     },
