@@ -25,6 +25,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -137,78 +145,6 @@
         "documentation": {}
     },
     {
-        "label": "create_engine",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Column",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Integer",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "String",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Float",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "DateTime",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Text",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "ForeignKey",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Date",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -330,6 +266,14 @@
     },
     {
         "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -354,14 +298,6 @@
     },
     {
         "label": "declarative_base",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -401,6 +337,14 @@
         "documentation": {}
     },
     {
+        "label": "Gender",
+        "importPath": "enums.gender",
+        "description": "enums.gender",
+        "isExtraImport": true,
+        "detail": "enums.gender",
+        "documentation": {}
+    },
+    {
         "label": "InstallmentStatus",
         "importPath": "enums.installment_status",
         "description": "enums.installment_status",
@@ -409,19 +353,11 @@
         "documentation": {}
     },
     {
-        "label": "utc_now",
-        "importPath": "utils.utc_now",
-        "description": "utils.utc_now",
+        "label": "InstallmentStatus",
+        "importPath": "enums.installment_status",
+        "description": "enums.installment_status",
         "isExtraImport": true,
-        "detail": "utils.utc_now",
-        "documentation": {}
-    },
-    {
-        "label": "utc_now",
-        "importPath": "utils.utc_now",
-        "description": "utils.utc_now",
-        "isExtraImport": true,
-        "detail": "utils.utc_now",
+        "detail": "enums.installment_status",
         "documentation": {}
     },
     {
@@ -433,11 +369,235 @@
         "documentation": {}
     },
     {
+        "label": "PaymentType",
+        "importPath": "enums.payment_type",
+        "description": "enums.payment_type",
+        "isExtraImport": true,
+        "detail": "enums.payment_type",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentType",
+        "importPath": "enums.payment_type",
+        "description": "enums.payment_type",
+        "isExtraImport": true,
+        "detail": "enums.payment_type",
+        "documentation": {}
+    },
+    {
+        "label": "utc_now",
+        "importPath": "utils.utc_now",
+        "description": "utils.utc_now",
+        "isExtraImport": true,
+        "detail": "utils.utc_now",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "importPath": "enums.user_role",
+        "description": "enums.user_role",
+        "isExtraImport": true,
+        "detail": "enums.user_role",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "importPath": "enums.user_role",
+        "description": "enums.user_role",
+        "isExtraImport": true,
+        "detail": "enums.user_role",
+        "documentation": {}
+    },
+    {
         "label": "IntegrityError",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
         "isExtraImport": true,
         "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "NoResultFound",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "NoResultFound",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "NoResultFound",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "NoResultFound",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "importPath": "models.customer",
+        "description": "models.customer",
+        "isExtraImport": true,
+        "detail": "models.customer",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Installment",
+        "importPath": "models.installment",
+        "description": "models.installment",
+        "isExtraImport": true,
+        "detail": "models.installment",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "importPath": "models.order_item",
+        "description": "models.order_item",
+        "isExtraImport": true,
+        "detail": "models.order_item",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "models.product",
+        "description": "models.product",
+        "isExtraImport": true,
+        "detail": "models.product",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "models.product",
+        "description": "models.product",
+        "isExtraImport": true,
+        "detail": "models.product",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "models.order",
+        "description": "models.order",
+        "isExtraImport": true,
+        "detail": "models.order",
+        "documentation": {}
+    },
+    {
+        "label": "BarCode",
+        "importPath": "models.bar_code",
+        "description": "models.bar_code",
+        "isExtraImport": true,
+        "detail": "models.bar_code",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -454,14 +614,6 @@
         "description": "models.user",
         "isExtraImport": true,
         "detail": "models.user",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "db",
-        "description": "db",
-        "isExtraImport": true,
-        "detail": "db",
         "documentation": {}
     },
     {
@@ -490,22 +642,6 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "Tk",
         "importPath": "tkinter",
         "description": "tkinter",
@@ -527,6 +663,54 @@
         "description": "tkinter",
         "isExtraImport": true,
         "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "BarCode",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
         "documentation": {}
     },
     {
@@ -605,11 +789,20 @@
         "documentation": {}
     },
     {
+        "label": "UserRole",
+        "kind": 6,
+        "importPath": "src.enums.user_role",
+        "description": "src.enums.user_role",
+        "peekOfCode": "class UserRole(Enum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"",
+        "detail": "src.enums.user_role",
+        "documentation": {}
+    },
+    {
         "label": "BarCode",
         "kind": 6,
         "importPath": "src.models.bar_code",
         "description": "src.models.bar_code",
-        "peekOfCode": "class BarCode(Base):\n    __tablename__ = \"product_barcodes\"\n    id = Column(Integer, primary_key=True)\n    code = Column(String(50), nullable=False)\n    product_id = Column(Integer, ForeignKey(\"products.id\"))\n    product = relationship(\"Product\", back_populates=\"bar_codes\")",
+        "peekOfCode": "class BarCode(Base):\n    __tablename__ = \"product_barcodes\"\n    id = Column(Integer, primary_key=True)\n    code = Column(String(50), nullable=False, index=True)\n    product_id = Column(Integer, ForeignKey(\"products.id\"))\n    product = relationship(\"Product\", back_populates=\"bar_codes\")",
         "detail": "src.models.bar_code",
         "documentation": {}
     },
@@ -638,42 +831,6 @@
         "description": "src.models.installment",
         "peekOfCode": "class Installment(Base):\n    __tablename__ = \"installments\"\n    id = Column(Integer, primary_key=True)\n    order_id = Column(Integer, nullable=False)\n    seller_id = Column(Integer, nullable=False)\n    customer_id = Column(Integer, nullable=False)\n    must_be_paid_at = Column(Date, nullable=False)\n    paid_at = Column(DateTime, nullable=True)\n    received_by_seller_id = Column(Integer, nullable=True)\n    amount = Column(Float, default=0.0)",
         "detail": "src.models.installment",
-        "documentation": {}
-    },
-    {
-        "label": "DB_FILE",
-        "kind": 5,
-        "importPath": "src.models.models",
-        "description": "src.models.models",
-        "peekOfCode": "DB_FILE = \"erp_data.db\"\nDB_URL = f\"sqlite:///{DB_FILE}\"\nfrom .base import Base\nengine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)",
-        "detail": "src.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "DB_URL",
-        "kind": 5,
-        "importPath": "src.models.models",
-        "description": "src.models.models",
-        "peekOfCode": "DB_URL = f\"sqlite:///{DB_FILE}\"\nfrom .base import Base\nengine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)",
-        "detail": "src.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "kind": 5,
-        "importPath": "src.models.models",
-        "description": "src.models.models",
-        "peekOfCode": "engine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)",
-        "detail": "src.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "kind": 5,
-        "importPath": "src.models.models",
-        "description": "src.models.models",
-        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)",
-        "detail": "src.models.models",
         "documentation": {}
     },
     {
@@ -708,17 +865,179 @@
         "kind": 6,
         "importPath": "src.models.user",
         "description": "src.models.user",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True)\n    username = Column(String(150), unique=True, nullable=False)\n    name = Column(String(250))\n    role = Column(String(20))\n    password = Column(String(256))",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True)\n    username = Column(String(150), unique=True, nullable=False)\n    name = Column(String(250))\n    role = Column(Enum(UserRole), nullable=False)\n    password = Column(String(256))",
         "detail": "src.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_customer",
+        "kind": 2,
+        "importPath": "src.services.curstomers",
+        "description": "src.services.curstomers",
+        "peekOfCode": "def create_customer(\n    name: str,\n    cpf: str,\n    state: str,\n    city: str,\n    address: str,\n    phone: str,\n    email: str,\n    gender: Gender\n):",
+        "detail": "src.services.curstomers",
+        "documentation": {}
+    },
+    {
+        "label": "update_customer",
+        "kind": 2,
+        "importPath": "src.services.curstomers",
+        "description": "src.services.curstomers",
+        "peekOfCode": "def update_customer(customer_id, **kwargs):\n    session = SessionLocal()\n    try:\n        customer = session.query(Customer).filter(Customer.id == customer_id).one()\n        for field, value in kwargs.items():\n            if hasattr(Customer, field):\n                setattr(customer, field, value)\n        session.commit()\n        return customer\n    except NoResultFound:",
+        "detail": "src.services.curstomers",
+        "documentation": {}
+    },
+    {
+        "label": "delete_customer",
+        "kind": 2,
+        "importPath": "src.services.curstomers",
+        "description": "src.services.curstomers",
+        "peekOfCode": "def delete_customer(customer_id):\n    session = SessionLocal()\n    try:\n        customer = session.query(Customer).filter(Customer.id == customer_id).one()\n        session.delete(customer)\n        session.commit()\n        return True\n    except NoResultFound:\n        session.rollback()\n        raise ValueError(\"Cliente não encontrado\")",
+        "detail": "src.services.curstomers",
+        "documentation": {}
+    },
+    {
+        "label": "find_all_customers",
+        "kind": 2,
+        "importPath": "src.services.curstomers",
+        "description": "src.services.curstomers",
+        "peekOfCode": "def find_all_customers():\n    session = SessionLocal()\n    try:\n        return session.query(Customer).all()\n    finally:\n        session.close()\ndef find_first_customer(**filters):\n    session = SessionLocal()\n    try:\n        query = session.query(Customer)",
+        "detail": "src.services.curstomers",
+        "documentation": {}
+    },
+    {
+        "label": "find_first_customer",
+        "kind": 2,
+        "importPath": "src.services.curstomers",
+        "description": "src.services.curstomers",
+        "peekOfCode": "def find_first_customer(**filters):\n    session = SessionLocal()\n    try:\n        query = session.query(Customer)\n        for field, value in filters.items():\n            if hasattr(Customer, field):\n                query = query.filter(getattr(Customer, field) == value)\n        return query.first()\n    finally:\n        session.close()",
+        "detail": "src.services.curstomers",
+        "documentation": {}
+    },
+    {
+        "label": "create_order",
+        "kind": 2,
+        "importPath": "src.services.orders",
+        "description": "src.services.orders",
+        "peekOfCode": "def create_order(\n    seller_id: int,\n    customer_id: int,\n    items: list[dict],\n    payment_type: PaymentType,\n    installments: int = 1\n) -> Order:\n    session = SessionLocal()\n    try:\n        product_ids = [i[\"product_id\"] for i in items]",
+        "detail": "src.services.orders",
+        "documentation": {}
+    },
+    {
+        "label": "find_all_orders",
+        "kind": 2,
+        "importPath": "src.services.orders",
+        "description": "src.services.orders",
+        "peekOfCode": "def find_all_orders() -> list[Order]:\n    session = SessionLocal()\n    try:\n        return session.query(Order).all()\n    finally:\n        session.close()\ndef find_first_order(**filters) -> Order | None:\n    session = SessionLocal()\n    try:\n        query = session.query(Order)",
+        "detail": "src.services.orders",
+        "documentation": {}
+    },
+    {
+        "label": "find_first_order",
+        "kind": 2,
+        "importPath": "src.services.orders",
+        "description": "src.services.orders",
+        "peekOfCode": "def find_first_order(**filters) -> Order | None:\n    session = SessionLocal()\n    try:\n        query = session.query(Order)\n        for field, value in filters.items():\n            if hasattr(Order, field):\n                query = query.filter(getattr(Order, field) == value)\n        return query.first()\n    finally:\n        session.close()",
+        "detail": "src.services.orders",
+        "documentation": {}
+    },
+    {
+        "label": "delete_order",
+        "kind": 2,
+        "importPath": "src.services.orders",
+        "description": "src.services.orders",
+        "peekOfCode": "def delete_order(order_id: int) -> bool:\n    session = SessionLocal()\n    try:\n        order = session.query(Order).filter(Order.id == order_id).one()\n        session.delete(order)\n        session.commit()\n        return True\n    except NoResultFound:\n        session.rollback()\n        raise ValueError(\"Pedido não encontrado\")",
+        "detail": "src.services.orders",
+        "documentation": {}
+    },
+    {
+        "label": "create_product",
+        "kind": 2,
+        "importPath": "src.services.products",
+        "description": "src.services.products",
+        "peekOfCode": "def create_product(name, buy_price=0, sell_price=0, stock=0, bar_codes=None):\n    session = SessionLocal()\n    try:\n        product = Product(\n            name=name,\n            buy_price=buy_price,\n            sell_price=sell_price,\n            stock=stock\n        )\n        session.add(product)",
+        "detail": "src.services.products",
+        "documentation": {}
+    },
+    {
+        "label": "update_product",
+        "kind": 2,
+        "importPath": "src.services.products",
+        "description": "src.services.products",
+        "peekOfCode": "def update_product(product_id, **kwargs):\n    session = SessionLocal()\n    try:\n        product = session.query(Product).filter(Product.id == product_id).one()\n        bar_codes = kwargs.pop(\"bar_codes\", None)\n        for field, value in kwargs.items():\n            if hasattr(Product, field):\n                setattr(product, field, value)\n        if bar_codes is not None:\n            session.query(BarCode).filter(BarCode.product_id == product_id).delete()",
+        "detail": "src.services.products",
+        "documentation": {}
+    },
+    {
+        "label": "delete_product",
+        "kind": 2,
+        "importPath": "src.services.products",
+        "description": "src.services.products",
+        "peekOfCode": "def delete_product(product_id):\n    session = SessionLocal()\n    try:\n        product = session.query(Product).filter(Product.id == product_id).one()\n        session.delete(product)\n        session.commit()\n        return True\n    except NoResultFound:\n        session.rollback()\n        raise ValueError(\"Produto não encontrado\")",
+        "detail": "src.services.products",
+        "documentation": {}
+    },
+    {
+        "label": "find_all_products",
+        "kind": 2,
+        "importPath": "src.services.products",
+        "description": "src.services.products",
+        "peekOfCode": "def find_all_products():\n    session = SessionLocal()\n    try:\n        return session.query(Product).all()\n    finally:\n        session.close()\ndef find_first_product(**filters):\n    session = SessionLocal()\n    try:\n        query = session.query(Product)",
+        "detail": "src.services.products",
+        "documentation": {}
+    },
+    {
+        "label": "find_first_product",
+        "kind": 2,
+        "importPath": "src.services.products",
+        "description": "src.services.products",
+        "peekOfCode": "def find_first_product(**filters):\n    session = SessionLocal()\n    try:\n        query = session.query(Product)\n        for field, value in filters.items():\n            if hasattr(Product, field):\n                query = query.filter(getattr(Product, field) == value)\n        return query.first()\n    finally:\n        session.close()",
+        "detail": "src.services.products",
         "documentation": {}
     },
     {
         "label": "create_user",
         "kind": 2,
-        "importPath": "src.services.user",
-        "description": "src.services.user",
+        "importPath": "src.services.users",
+        "description": "src.services.users",
         "peekOfCode": "def create_user(username, name, role, password):\n    session = SessionLocal()\n    try:\n        user = User(\n            username=username,\n            name=name,\n            role=role,\n            password=hash_password(password)\n        )\n        session.add(user)",
-        "detail": "src.services.user",
+        "detail": "src.services.users",
+        "documentation": {}
+    },
+    {
+        "label": "update_user",
+        "kind": 2,
+        "importPath": "src.services.users",
+        "description": "src.services.users",
+        "peekOfCode": "def update_user(\n    user_id: str,\n    username: Optional[str]=None,\n    name: Optional[str]=None,\n    role: Optional[UserRole]=None,\n    password=None\n):\n    session = SessionLocal()\n    try:\n        user = session.query(User).filter(User.id == user_id).one()",
+        "detail": "src.services.users",
+        "documentation": {}
+    },
+    {
+        "label": "delete_user",
+        "kind": 2,
+        "importPath": "src.services.users",
+        "description": "src.services.users",
+        "peekOfCode": "def delete_user(user_id: str):\n    session = SessionLocal()\n    try:\n        user = session.query(User).filter(User.id == user_id).one()\n        session.delete(user)\n        session.commit()\n    except NoResultFound:\n        session.rollback()\n        raise ValueError(\"Usuário não encontrado\")\n    finally:",
+        "detail": "src.services.users",
+        "documentation": {}
+    },
+    {
+        "label": "find_all_users",
+        "kind": 2,
+        "importPath": "src.services.users",
+        "description": "src.services.users",
+        "peekOfCode": "def find_all_users():\n    session = SessionLocal()\n    try:\n        return session.query(User).all()\n    finally:\n        session.close()\ndef find_first_customers(**filters):\n    session = SessionLocal()\n    try:\n        query = session.query(User)",
+        "detail": "src.services.users",
+        "documentation": {}
+    },
+    {
+        "label": "find_first_customers",
+        "kind": 2,
+        "importPath": "src.services.users",
+        "description": "src.services.users",
+        "peekOfCode": "def find_first_customers(**filters):\n    session = SessionLocal()\n    try:\n        query = session.query(User)\n        for field, value in filters.items():\n            if hasattr(User, field):\n                query = query.filter(getattr(User, field) == value)\n        return query.first()\n    finally:\n        session.close()",
+        "detail": "src.services.users",
         "documentation": {}
     },
     {
@@ -780,7 +1099,7 @@
         "kind": 2,
         "importPath": "src.db",
         "description": "src.db",
-        "peekOfCode": "def init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "peekOfCode": "def init_db():\n    Base.metadata.create_all(bind=engine)",
         "detail": "src.db",
         "documentation": {}
     },
@@ -789,7 +1108,7 @@
         "kind": 5,
         "importPath": "src.db",
         "description": "src.db",
-        "peekOfCode": "engine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nBase = declarative_base()\ndef init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "peekOfCode": "engine = create_engine(DB_URL, echo=False, future=True)\nSessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nBase = declarative_base()\ndef init_db():\n    Base.metadata.create_all(bind=engine)",
         "detail": "src.db",
         "documentation": {}
     },
@@ -798,7 +1117,7 @@
         "kind": 5,
         "importPath": "src.db",
         "description": "src.db",
-        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nBase = declarative_base()\ndef init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)\nBase = declarative_base()\ndef init_db():\n    Base.metadata.create_all(bind=engine)",
         "detail": "src.db",
         "documentation": {}
     },
@@ -807,7 +1126,7 @@
         "kind": 5,
         "importPath": "src.db",
         "description": "src.db",
-        "peekOfCode": "Base = declarative_base()\ndef init_db():\n    from models import user, client, product, order, installment\n    Base.metadata.create_all(bind=engine)",
+        "peekOfCode": "Base = declarative_base()\ndef init_db():\n    Base.metadata.create_all(bind=engine)",
         "detail": "src.db",
         "documentation": {}
     },
