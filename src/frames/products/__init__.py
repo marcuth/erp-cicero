@@ -1,7 +1,10 @@
-from ttkbootstrap import Frame, Label, Button, Treeview, Menu, Toplevel, Entry, StringVar
-from tkinter import Tk, CENTER, END
-from typing import Optional
+from ttkbootstrap import Frame, Label, Button, Treeview, Menu, Toplevel, Entry, StringVar, Text
+from tkinter import Tk, CENTER, END, StringVar
+from typing import Optional, Tuple
+from datetime import datetime
 
+from widgets.currency_entry import CurrencyEntry
+from widgets.int_entry import IntEntry
 from utils.window import center_window
 
 class ProductsFrame(Frame):
@@ -38,14 +41,88 @@ class ProductsFrame(Frame):
         
     def _put_header_bar(self) -> None:
         frame = Frame(self)
-        frame.grid(row=0, column=0, columnspan=3, pady=(10, 0), sticky="ew")
+        frame.grid(row=0, column=0, columnspan=3, pady=(10, 10), padx=20, sticky="ew")
         frame.grid_columnconfigure(0, weight=1)
 
         heading = Label(frame, text="Gestão de Produtos", font=("TkDefaultFont", 16, "bold"))
         heading.pack(side="left", padx=(20, 0))
 
-        create_product_button = Button(frame, text="Criar produto")
+        create_product_button = Button(frame, text="Criar produto", command=self._show_create_product_popup)
         create_product_button.pack(side="right", padx=(0, 20))
+    
+    def _show_create_product_popup(self) -> None:
+        popup = Toplevel(self)
+        popup.title("Criar Produto")
+        popup.geometry("700x380")
+        popup.resizable(False, False)
+
+        popup.transient(self)
+        popup.grab_set()
+        
+        center_window(popup)
+        
+        container = Frame(master=popup)
+        
+        name_label = Label(master=container, text="Nome:")
+        name_entry = Entry(master=container)
+        
+        buy_price_label = Label(master=container, text="Preço de custo (R$):")
+        buy_price_entry = CurrencyEntry(master=container)
+        
+        sell_price_label = Label(master=container, text="Preço de venda (R$):")
+        sell_price_entry = CurrencyEntry(master=container)
+        
+        description_label = Label(master=container, text="Descrição:")
+        description_text = Text(master=container, height=3)
+        
+        stock_label = Label(master=container, text="Itens em estoque:")
+        stock_entry = IntEntry(master=container)
+        
+        barcodes_label = Label(master=container, text="EANs*:")
+        
+        barcode1_entry = IntEntry(master=container)
+        barcode2_entry = IntEntry(master=container)
+        barcode3_entry = IntEntry(master=container)
+        
+        button_frame = Frame(master=container)
+        button_frame.grid(row=6, column=0, columnspan=5, sticky="e", padx=10, pady=(10,15))
+        
+        cancel_button = Button(master=button_frame, text="Cancelar", command=popup.destroy, bootstyle="danger")
+        create_button = Button(master=button_frame, text="Criar produto", command=lambda: print("Criar clicado"))
+        
+        create_button.pack(side="right")
+        cancel_button.pack(side="right", padx=10)
+        
+        container.columnconfigure(0, weight=1)
+        container.columnconfigure(1, weight=1)
+        container.columnconfigure(4, weight=1)
+
+        name_label.grid(row=0, column=0, sticky="w", padx=10, pady=(15,5))
+        name_entry.grid(row=1, column=0, columnspan=2, sticky="ew", padx=10, pady=(15,5))
+
+        description_label.grid(row=2, column=0, sticky="nw", padx=10, pady=(10,5))
+        description_text.grid(row=3, column=0, columnspan=2, sticky="ew", padx=10, pady=(0,15))
+
+        buy_price_label.grid(row=4, column=0, sticky="w", padx=10, pady=5)
+        buy_price_entry.grid(row=5, column=0, sticky="ew", padx=10, pady=5)
+
+        sell_price_label.grid(row=4, column=1, sticky="w", padx=10, pady=5)
+        sell_price_entry.grid(row=5, column=1, sticky="ew", padx=10, pady=5)
+        
+        barcodes_label.grid(row=0, column=4, sticky="w", padx=10, pady=(0,5))
+        
+        barcode1_entry.grid(row=1, column=4, padx=10, pady=(0,1))
+        barcode2_entry.grid(row=2, column=4, padx=10, pady=1)
+        barcode3_entry.grid(row=3, column=4, padx=10, pady=(1,15))
+        
+        stock_label.grid(row=4, column=4, sticky="w", padx=10, pady=(10,15))
+        stock_entry.grid(row=5, column=4, sticky="ew", padx=10, pady=(10,15))
+        
+        button_frame.grid(row=6, column=0, columnspan=5, sticky="e", padx=10, pady=(10,15))
+        
+        container.pack(fill="both", expand=True, padx=15, pady=15)
+        
+    def _handle_create_product(self) -> None: ...
         
     def _put_search_bar(self) -> None:
         frame = Frame(self)
@@ -75,11 +152,11 @@ class ProductsFrame(Frame):
 
         self.tree.grid(row=2, column=0, columnspan=2, padx=20, pady=(0, 20), sticky="nsew")
         
-        self.tree.bind("<Button-3>", self._on_right_click)
-        self.tree.bind("<Return>", self._on_enter_key)
-        self.tree.bind("<Double-1>", self._on_double_click)
+        self.tree.bind("<Button-3>", self._on_item_right_click)
+        self.tree.bind("<Return>", self._on_item_enter_key)
+        self.tree.bind("<Double-1>", self._on_item_double_click)
         
-    def _filter_products(self):
+    def _filter_products(self) -> None:
         term = self.search_var.get().lower()
         self.tree.delete(*self.tree.get_children())
 
@@ -93,7 +170,7 @@ class ProductsFrame(Frame):
         for row_data in filtered_data:
             self.tree.insert("", END, values=row_data)
         
-    def _on_right_click(self, event):
+    def _on_item_right_click(self, event):
         selected_item = self.tree.identify_row(event.y)
         
         if selected_item:
@@ -103,13 +180,13 @@ class ProductsFrame(Frame):
             menu.add_command(label="Excluir Produto", command=lambda: self._delete_product(selected_item))
             menu.post(event.x_root, event.y_root)
             
-    def _on_enter_key(self, _):
+    def _on_item_enter_key(self, _):
         selected_item = self.tree.focus()
         
         if selected_item:
             self._view_product(selected_item)
             
-    def _on_double_click(self, event):
+    def _on_item_double_click(self, event):
         selected_item = self.tree.identify_row(event.y)
         
         if selected_item:
@@ -125,41 +202,96 @@ class ProductsFrame(Frame):
         print(f"Excluir produto: {values}")
         self.tree.delete(item_id)
         
-    def _show_product_popup(self, values) -> None:
+    def _show_product_popup(self, values: Tuple[str, str, str, str]) -> None:
+        id, name, buy_price, sell_price = values
+        
+        print(values)
+
         popup = Toplevel(self)
         popup.title("Editar Produto")
-        popup.geometry("350x250")
+        popup.geometry("720x450")
         popup.resizable(False, False)
+        
+        name_var = StringVar(popup, name)
+        buy_price_var = StringVar(popup, str(buy_price))
+        sell_price_var = StringVar(popup, str(sell_price))
+        created_at = datetime.now()
+        updated_at = datetime.now()
+        
+        name_var.set(name)
 
         popup.transient(self)
         popup.grab_set()
         
         center_window(popup)
+        
+        container = Frame(master=popup)
+        
+        id_label = Label(master=container, text=f"ID #{id}")
+        created_at_label = Label(master=container, text=created_at.strftime("Criado em %d/%m/%Y às %H:%m:%S"))
+        updated_at_label = Label(master=container, text=updated_at.strftime("Atualizado em %d/%m/%Y às %H:%m:%S"))
+        
+        name_label = Label(master=container, text="Nome:")
+        name_entry = Entry(master=container, textvariable=name_var)
+        
+        buy_price_label = Label(master=container, text="Preço de custo (R$):")
+        buy_price_entry = CurrencyEntry(master=container, textvariable=buy_price_var)
+        
+        sell_price_label = Label(master=container, text="Preço de venda (R$):")
+        sell_price_entry = CurrencyEntry(master=container, textvariable=sell_price_var)
+        
+        description_label = Label(master=container, text="Descrição:")
+        description_text = Text(master=container, height=3)
+        
+        stock_label = Label(master=container, text="Itens em estoque:")
+        stock_entry = IntEntry(master=container)
+        
+        barcodes_label = Label(master=container, text="EANs*:")
+        
+        barcode1_entry = IntEntry(master=container)
+        barcode2_entry = IntEntry(master=container)
+        barcode3_entry = IntEntry(master=container)
+        
+        button_frame = Frame(master=container)
+        button_frame.grid(row=6, column=0, columnspan=5, sticky="e", padx=10, pady=(10,15))
+        
+        cancel_button = Button(master=button_frame, text="Cancelar", command=popup.destroy, bootstyle="danger")
+        create_button = Button(master=button_frame, text="Atualizar produto", command=lambda: print("Criar clicado"))
+        
+        create_button.pack(side="right")
+        cancel_button.pack(side="right", padx=10)
+        
+        container.columnconfigure(0, weight=1)
+        container.columnconfigure(1, weight=1)
+        container.columnconfigure(4, weight=1)
+        
+        id_label.grid(row=0, column=0, columnspan=2, sticky="ew", padx=10, pady=(15,5))
 
-        labels = ["ID", "Nome", "Estoque", "Preço de Venda"]
-        entries = []
+        name_label.grid(row=1, column=0, sticky="w", padx=10, pady=(15,5))
+        name_entry.grid(row=2, column=0, columnspan=2, sticky="ew", padx=10, pady=(15,5))
 
-        for i, (label, value) in enumerate(zip(labels, values)):
-            lbl = Label(popup, text=f"{label}:", font=("TkDefaultFont", 10, "bold"))
-            lbl.grid(row=i, column=0, sticky="e", padx=10, pady=5)
+        description_label.grid(row=3, column=0, sticky="nw", padx=10, pady=(10,5))
+        description_text.grid(row=4, column=0, columnspan=2, sticky="ew", padx=10, pady=(0,15))
 
-            entry = Entry(popup)
-            entry.insert(0, value)
-            entry.grid(row=i, column=1, sticky="w", padx=10, pady=5)
-            entries.append(entry)
+        buy_price_label.grid(row=5, column=0, sticky="w", padx=10, pady=5)
+        buy_price_entry.grid(row=6, column=0, sticky="ew", padx=10, pady=5)
 
-        def save():
-            novos_valores = [entry.get() for entry in entries]
-            item_id = self.tree.focus()
-            self.tree.item(item_id, values=novos_valores)
-            popup.destroy()
-
-        def cancel():
-            popup.destroy()
-            
-        btn_cancel = Button(popup, text="Cancelar", command=cancel, bootstyle="secondary")
-        btn_cancel.grid(row=4, column=0, padx=10, pady=15)
-
-        btn_save = Button(popup, text="Salvar", command=save)
-        btn_save.grid(row=4, column=1, padx=10, pady=15)
+        sell_price_label.grid(row=5, column=1, sticky="w", padx=10, pady=5)
+        sell_price_entry.grid(row=6, column=1, sticky="ew", padx=10, pady=5)
+        
+        created_at_label.grid(row=0, column=4)
+        updated_at_label.grid(row=1, column=4,)
+        
+        barcodes_label.grid(row=2, column=4, sticky="w", padx=10, pady=(0,5))
+        
+        barcode1_entry.grid(row=3, column=4, padx=10, pady=(0,1))
+        barcode2_entry.grid(row=4, column=4, padx=10, pady=1)
+        barcode3_entry.grid(row=5, column=4, padx=10, pady=(1,15))
+        
+        stock_label.grid(row=6, column=4, sticky="w", padx=10, pady=(10,15))
+        stock_entry.grid(row=7, column=4, sticky="ew", padx=10, pady=(10,15))
+        
+        button_frame.grid(row=9, column=0, columnspan=5, sticky="e", padx=10, pady=(10,15))
+        
+        container.pack(fill="both", expand=True, padx=15, pady=15)
         
