@@ -26,7 +26,7 @@ def handle_submit_login_credentials(username: str, password: str) -> None:
     handle_valid_login()
     
 def handle_valid_login() -> None:
-    clear_window(root)
+    # clear_window(root)
     
     root.state("zoomed")
     
@@ -47,8 +47,10 @@ def handle_valid_login() -> None:
     notebook.pack(expand=True, fill="both")
 
 def main() -> None:
-    login_frame = LoginFrame(root, on_submit=handle_submit_login_credentials)
-    login_frame.pack()
+    # login_frame = LoginFrame(root, on_submit=handle_submit_login_credentials)
+    # login_frame.pack()
+    # root.mainloop()
+    handle_valid_login()
     root.mainloop()
 
 if __name__ == "__main__":
