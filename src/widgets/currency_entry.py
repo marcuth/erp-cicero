@@ -13,7 +13,7 @@ class CurrencyEntry(ttk.Entry):
         )
 
     def _validate_input(self, inserted_char: str, new_value: str):
-        if inserted_char == "":
+        if new_value == "":
             return True
 
         if inserted_char.isdigit():
