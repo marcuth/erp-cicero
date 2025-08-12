@@ -4,6 +4,7 @@ from typing import Optional, Tuple
 from datetime import datetime
 
 from widgets.currency_entry import CurrencyEntry
+from widgets.bar_code_entry import BarCodeEntry
 from widgets.int_entry import IntEntry
 from utils.window import center_window
 
@@ -63,13 +64,13 @@ class ProductsFrame(Frame):
         
         container = Frame(master=popup)
         
-        name_label = Label(master=container, text="Nome:")
+        name_label = Label(master=container, text="Nome*:")
         name_entry = Entry(master=container)
         
-        buy_price_label = Label(master=container, text="Preço de custo (R$):")
+        buy_price_label = Label(master=container, text="Preço de custo (R$)*:")
         buy_price_entry = CurrencyEntry(master=container)
         
-        sell_price_label = Label(master=container, text="Preço de venda (R$):")
+        sell_price_label = Label(master=container, text="Preço de venda (R$)*:")
         sell_price_entry = CurrencyEntry(master=container)
         
         description_label = Label(master=container, text="Descrição:")
@@ -80,14 +81,14 @@ class ProductsFrame(Frame):
         
         barcodes_label = Label(master=container, text="EANs*:")
         
-        barcode1_entry = IntEntry(master=container)
-        barcode2_entry = IntEntry(master=container)
-        barcode3_entry = IntEntry(master=container)
+        barcode1_entry = BarCodeEntry(master=container)
+        barcode2_entry = BarCodeEntry(master=container)
+        barcode3_entry = BarCodeEntry(master=container)
         
         button_frame = Frame(master=container)
         button_frame.grid(row=6, column=0, columnspan=5, sticky="e", padx=10, pady=(10,15))
         
-        cancel_button = Button(master=button_frame, text="Cancelar", command=popup.destroy, bootstyle="danger")
+        cancel_button = Button(master=button_frame, text="Cancelar", command=popup.destroy, bootstyle="secondary")
         create_button = Button(master=button_frame, text="Criar produto", command=lambda: print("Criar clicado"))
         
         create_button.pack(side="right")
@@ -217,8 +218,6 @@ class ProductsFrame(Frame):
         sell_price_var = StringVar(popup, str(sell_price))
         created_at = datetime.now()
         updated_at = datetime.now()
-        
-        name_var.set(name)
 
         popup.transient(self)
         popup.grab_set()
@@ -231,31 +230,31 @@ class ProductsFrame(Frame):
         created_at_label = Label(master=container, text=created_at.strftime("Criado em %d/%m/%Y às %H:%m:%S"))
         updated_at_label = Label(master=container, text=updated_at.strftime("Atualizado em %d/%m/%Y às %H:%m:%S"))
         
-        name_label = Label(master=container, text="Nome:")
+        name_label = Label(master=container, text="Nome*:")
         name_entry = Entry(master=container, textvariable=name_var)
         
-        buy_price_label = Label(master=container, text="Preço de custo (R$):")
+        buy_price_label = Label(master=container, text="Preço de custo (R$)*:")
         buy_price_entry = CurrencyEntry(master=container, textvariable=buy_price_var)
         
-        sell_price_label = Label(master=container, text="Preço de venda (R$):")
+        sell_price_label = Label(master=container, text="Preço de venda (R$)*:")
         sell_price_entry = CurrencyEntry(master=container, textvariable=sell_price_var)
         
         description_label = Label(master=container, text="Descrição:")
         description_text = Text(master=container, height=3)
         
-        stock_label = Label(master=container, text="Itens em estoque:")
+        stock_label = Label(master=container, text="Itens em estoque*:")
         stock_entry = IntEntry(master=container)
         
         barcodes_label = Label(master=container, text="EANs*:")
         
-        barcode1_entry = IntEntry(master=container)
-        barcode2_entry = IntEntry(master=container)
-        barcode3_entry = IntEntry(master=container)
+        barcode1_entry = BarCodeEntry(master=container)
+        barcode2_entry = BarCodeEntry(master=container)
+        barcode3_entry = BarCodeEntry(master=container)
         
         button_frame = Frame(master=container)
         button_frame.grid(row=6, column=0, columnspan=5, sticky="e", padx=10, pady=(10,15))
         
-        cancel_button = Button(master=button_frame, text="Cancelar", command=popup.destroy, bootstyle="danger")
+        cancel_button = Button(master=button_frame, text="Cancelar", command=popup.destroy, bootstyle="secondary")
         create_button = Button(master=button_frame, text="Atualizar produto", command=lambda: print("Criar clicado"))
         
         create_button.pack(side="right")
