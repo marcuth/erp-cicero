@@ -690,6 +690,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "ttkbootstrap.constants",
+        "description": "ttkbootstrap.constants",
+        "isExtraImport": true,
+        "detail": "ttkbootstrap.constants",
+        "documentation": {}
+    },
+    {
         "label": "ttkbootstrap",
         "kind": 6,
         "isExtraImport": true,
@@ -1110,11 +1118,20 @@
         "documentation": {}
     },
     {
+        "label": "BarCodeEntry",
+        "kind": 6,
+        "importPath": "src.widgets.bar_code_entry",
+        "description": "src.widgets.bar_code_entry",
+        "peekOfCode": "class BarCodeEntry(ttk.Entry):\n    def __init__(self, master, max_length=13, **kwargs):\n        super().__init__(master, **kwargs)\n        self.max_length = max_length\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%P\", \"%S\")\n        )\n    def _validate_input(self, new_value: str, char: str):",
+        "detail": "src.widgets.bar_code_entry",
+        "documentation": {}
+    },
+    {
         "label": "CurrencyEntry",
         "kind": 6,
         "importPath": "src.widgets.currency_entry",
         "description": "src.widgets.currency_entry",
-        "peekOfCode": "class CurrencyEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%S\", \"%P\")\n        )\n    def _validate_input(self, inserted_char: str, new_value: str):\n        if inserted_char == \"\":",
+        "peekOfCode": "class CurrencyEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%S\", \"%P\")\n        )\n    def _validate_input(self, inserted_char: str, new_value: str):\n        if new_value == \"\":",
         "detail": "src.widgets.currency_entry",
         "documentation": {}
     },
