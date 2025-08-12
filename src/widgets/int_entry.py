@@ -6,6 +6,7 @@ class IntEntry(ttk.Entry):
         super().__init__(master, **kwargs)
         
         vcmd = self.register(self._validate_input)
+        
         self.config(
             validate="key",
             validatecommand=(vcmd, '%S')
