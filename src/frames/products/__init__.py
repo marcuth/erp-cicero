@@ -76,7 +76,7 @@ class ProductsFrame(Frame):
         description_label = Label(master=container, text="Descrição:")
         description_text = Text(master=container, height=3)
         
-        stock_label = Label(master=container, text="Itens em estoque:")
+        stock_label = Label(master=container, text="Itens em estoque*:")
         stock_entry = IntEntry(master=container)
         
         barcodes_label = Label(master=container, text="EANs*:")
