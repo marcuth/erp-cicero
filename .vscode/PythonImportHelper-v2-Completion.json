@@ -617,55 +617,6 @@
         "documentation": {}
     },
     {
-        "label": "hashlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "hashlib",
-        "description": "hashlib",
-        "detail": "hashlib",
-        "documentation": {}
-    },
-    {
-        "label": "SALT",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "DB_URL",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "Tk",
-        "importPath": "tkinter",
-        "description": "tkinter",
-        "isExtraImport": true,
-        "detail": "tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "messagebox",
-        "importPath": "tkinter",
-        "description": "tkinter",
-        "isExtraImport": true,
-        "detail": "tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "Tk",
-        "importPath": "tkinter",
-        "description": "tkinter",
-        "isExtraImport": true,
-        "detail": "tkinter",
-        "documentation": {}
-    },
-    {
         "label": "*",
         "importPath": "ttkbootstrap.constants",
         "description": "ttkbootstrap.constants",
@@ -720,6 +671,55 @@
         "description": "ttkbootstrap",
         "isExtraImport": true,
         "detail": "ttkbootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "SALT",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_URL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
         "documentation": {}
     },
     {
@@ -1042,6 +1042,42 @@
         "documentation": {}
     },
     {
+        "label": "BarCodeEntry",
+        "kind": 6,
+        "importPath": "src.ui.widgets.bar_code_entry",
+        "description": "src.ui.widgets.bar_code_entry",
+        "peekOfCode": "class BarCodeEntry(ttk.Entry):\n    def __init__(self, master, max_length=13, **kwargs):\n        super().__init__(master, **kwargs)\n        self.max_length = max_length\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%P\", \"%S\")\n        )\n    def _validate_input(self, new_value: str, char: str):",
+        "detail": "src.ui.widgets.bar_code_entry",
+        "documentation": {}
+    },
+    {
+        "label": "CurrencyEntry",
+        "kind": 6,
+        "importPath": "src.ui.widgets.currency_entry",
+        "description": "src.ui.widgets.currency_entry",
+        "peekOfCode": "class CurrencyEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%S\", \"%P\")\n        )\n    def _validate_input(self, inserted_char: str, new_value: str):\n        if new_value == \"\":",
+        "detail": "src.ui.widgets.currency_entry",
+        "documentation": {}
+    },
+    {
+        "label": "FloatEntry",
+        "kind": 6,
+        "importPath": "src.ui.widgets.float_entry",
+        "description": "src.ui.widgets.float_entry",
+        "peekOfCode": "class FloatEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%S\", \"%P\")\n        )\n    def _validate_input(self, text: str, new_value: str):\n        if text == \"\":",
+        "detail": "src.ui.widgets.float_entry",
+        "documentation": {}
+    },
+    {
+        "label": "IntEntry",
+        "kind": 6,
+        "importPath": "src.ui.widgets.int_entry",
+        "description": "src.ui.widgets.int_entry",
+        "peekOfCode": "class IntEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, '%S')\n        )\n    def _validate_input(self, text: str):\n        return text.isdigit() or text == \"\"",
+        "detail": "src.ui.widgets.int_entry",
+        "documentation": {}
+    },
+    {
         "label": "hash_password",
         "kind": 2,
         "importPath": "src.utils.security",
@@ -1075,42 +1111,6 @@
         "description": "src.utils.window",
         "peekOfCode": "def clear_window(window: Tk):\n    for widget in window.winfo_children():\n        widget.destroy()",
         "detail": "src.utils.window",
-        "documentation": {}
-    },
-    {
-        "label": "BarCodeEntry",
-        "kind": 6,
-        "importPath": "src.widgets.bar_code_entry",
-        "description": "src.widgets.bar_code_entry",
-        "peekOfCode": "class BarCodeEntry(ttk.Entry):\n    def __init__(self, master, max_length=13, **kwargs):\n        super().__init__(master, **kwargs)\n        self.max_length = max_length\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%P\", \"%S\")\n        )\n    def _validate_input(self, new_value: str, char: str):",
-        "detail": "src.widgets.bar_code_entry",
-        "documentation": {}
-    },
-    {
-        "label": "CurrencyEntry",
-        "kind": 6,
-        "importPath": "src.widgets.currency_entry",
-        "description": "src.widgets.currency_entry",
-        "peekOfCode": "class CurrencyEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%S\", \"%P\")\n        )\n    def _validate_input(self, inserted_char: str, new_value: str):\n        if new_value == \"\":",
-        "detail": "src.widgets.currency_entry",
-        "documentation": {}
-    },
-    {
-        "label": "FloatEntry",
-        "kind": 6,
-        "importPath": "src.widgets.float_entry",
-        "description": "src.widgets.float_entry",
-        "peekOfCode": "class FloatEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, \"%S\", \"%P\")\n        )\n    def _validate_input(self, text: str, new_value: str):\n        if text == \"\":",
-        "detail": "src.widgets.float_entry",
-        "documentation": {}
-    },
-    {
-        "label": "IntEntry",
-        "kind": 6,
-        "importPath": "src.widgets.int_entry",
-        "description": "src.widgets.int_entry",
-        "peekOfCode": "class IntEntry(ttk.Entry):\n    def __init__(self, master, **kwargs):\n        super().__init__(master, **kwargs)\n        vcmd = self.register(self._validate_input)\n        self.config(\n            validate=\"key\",\n            validatecommand=(vcmd, '%S')\n        )\n    def _validate_input(self, text: str):\n        return text.isdigit() or text == \"\"",
-        "detail": "src.widgets.int_entry",
         "documentation": {}
     },
     {
