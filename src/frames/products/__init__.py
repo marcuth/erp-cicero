@@ -3,9 +3,9 @@ from tkinter import Tk, CENTER, END, StringVar
 from typing import Optional, Tuple
 from datetime import datetime
 
-from widgets.currency_entry import CurrencyEntry
-from widgets.bar_code_entry import BarCodeEntry
-from widgets.int_entry import IntEntry
+from ui.widgets.currency_entry import CurrencyEntry
+from ui.widgets.bar_code_entry import BarCodeEntry
+from ui.widgets.int_entry import IntEntry
 from utils.window import center_window
 
 class ProductsFrame(Frame):
