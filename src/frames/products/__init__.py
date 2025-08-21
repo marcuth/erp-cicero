@@ -4,6 +4,7 @@ from typing import Optional, Tuple
 from datetime import datetime
 
 
+
 from ui.widgets.currency_entry import CurrencyEntry
 from ui.widgets.bar_code_entry import BarCodeEntry
 from ui.widgets.int_entry import IntEntry
